@@ -1,0 +1,266 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #fff;
+  font-size: 1.8rem;
+  margin:0;
+  font-family: Serif;
+}
+
+header{
+  box-sizing: border-box;
+  display:flex;
+  width:100%;
+  top:0px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index:5;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  align-items: center;
+  background-color: #181818;
+  justify-content: space-between;
+}
+
+#header-img{
+  justify-content: flex-start;
+  top:-1rem;
+  width:100%;
+  max-width:8vw;
+}
+
+
+#nav-bar{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.nav-bar{
+  width:60vw;
+}
+
+a{
+  text-decoration: none;
+  color: #F7F7F7;
+}
+
+.intro{
+  background: url("images/intro-unsplash.jpg") no-repeat fixed center;
+  position:relative;
+  box-sizing: border-box;
+  width:100%;
+  min-height: 40vw;
+  color:#F7F7F7;
+  /*making intro into a grid for positioning the div-title and intro-container*/
+  display: grid;
+  grid-template-rows: 2;
+}
+
+h1{
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+#video{
+  width:100%;
+  max-width: 560px;
+}
+
+#email {
+  font-size: 1.4rem;
+  box-sizing: content-box;
+  border-radius: 5px;
+  width: 70%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+#submit, button {
+  -webkit-appearance: none;
+  background-color: #007FFF;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+
+#intro-container{
+  display: flex;
+  width: 50%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#div-title >h1{
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+#features-container{
+  display: flex;
+  flex-direction: row;
+  height:100%;
+  padding-right: 2rem;
+  padding-left: 3rem;
+}
+
+#features{
+  background-color: #F7F7F7;
+  padding: 2rem 0 3rem 0;
+}
+
+#features-desc{
+  font-size: 1.8rem;
+  padding-right: 2rem;
+  width: 55%;
+}
+
+.img-grid{
+  display:flex;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+
+#div-title >h2{
+  width:100%;
+  text-align: center;
+}
+
+#pricing{
+  background-color: #F7F7F7;
+  display:block;
+  width: 100%;
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+}
+
+#pricing-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height:100%;
+}
+
+.pricing-plan {
+  margin: 0px 3rem;
+  padding: 0.5rem;
+  width: 25%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2); /* adding box-shadow to each pricing plan*/
+  display: flex;
+  flex-direction: column; /*for elements inside each plan*/
+  align-items: center;
+}
+
+#package-label {
+  font-size: 2rem !important;
+  font-weight: bold;
+  color: #007FFF;
+  height: 12%;
+  padding-bottom: 5px;
+}
+
+#package-price{
+  height: 10%;
+  font-size: 1.6rem;
+  color: gray;
+  font-weight: bold;
+}
+
+#package-features{
+  height:50%;
+}
+
+.horizontal {
+  padding-top: 5px;
+  border-bottom: 3px solid gray;
+  width:90%;
+  position: relative;
+}
+
+#about-us{
+  padding: 2rem;
+  text-align: center;
+}
+
+.team{
+  border: 2px solid gold;
+  border-radius: 50%;
+  width: 130px;
+  margin: 2rem;
+}
+
+#job-title {
+  display:flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+
+}
+
+footer{
+  background-color: #181818;
+  color: #F7F7F7;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+ul{
+  list-style-type: none;
+  padding-inline-start: 0;
+  line-height: 2.6rem;
+}
+
+footer > ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+  footer > ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img{
+    max-width:15vw; /*increasing the size of the logo*/
+  }
+
+  .pricing-plan {
+    width:60%;
+    margin-bottom:2rem;
+  }
+
+  #pricing-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #features-container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+}
